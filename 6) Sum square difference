@@ -27,7 +27,7 @@ class locha {
         for (int i = 0; i <= limit; i++) {
             inputs[i]=i*i;
             sum1 = sum1 + inputs[i];
-            System.out.println(inputs[i]);
+            //System.out.println(inputs[i]);
         }
     //}
         //System.out.println("checking");
