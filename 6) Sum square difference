@@ -1,0 +1,44 @@
+/*
+Problem : 
+The sum of the squares of the first ten natural numbers is,
+1^2 + 2^2 + ... + 10^2 = 385
+The square of the sum of the first ten natural numbers is,
+(1 + 2 + ... + 10)^2 = 55^2 = 3025
+Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.
+Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+*/
+
+// Solution:
+
+public class Today {
+    public static void main(String[] args) {
+   locha obj = new locha();
+   obj.difference();
+}
+}
+
+class locha {
+    void difference(){
+    int inputs[] = new int[10000];
+    int limit=1000;
+    
+    //void SquareKaSum(){
+        int sum1 = 0;
+        for (int i = 0; i <= limit; i++) {
+            inputs[i]=i*i;
+            sum1 = sum1 + inputs[i];
+            System.out.println(inputs[i]);
+        }
+    //}
+        //System.out.println("checking");
+    //void SumKaSquare(){
+        int sum2 = 0;
+        for (int i = 0; i <= limit; i++) {
+            sum2 = sum2+i;
+        }
+        sum2 = sum2*sum2;
+    //}
+        int ans = sum2-sum1;
+        System.out.println("The difference is  " + ans);
+    }
+}
